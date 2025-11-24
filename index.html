@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a71d0bb5b9.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="me">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#cer">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Pratik</span><br>Shinde From India</h1>
+            </div>
+           </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="no images">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tenetur debitis perspiciatis labore quia enim numquam aperiam ab voluptates distinctio at id consequuntur fugiat, atque nam maxime repellat, corporis aliquam?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias delectus veniam hic repellendus ex perspiciatis obcaecati ipsam odit omnis deleniti iusto nam ea similique a, quis dolorum maxime fuga odio.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend Development</span><br>HTML,CSS,Javascript,React.js</li>
+                        <li><span>Backend Developemnt</span><br>Node.js,Express.js,MongoDB</li>
+                        <li><span>DSA in Java</span><br>Problem Solving Skill</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Intership</span><br>At A2Z It hub,Ahilyanagar in 2023<br>Html,css,javascript,PHP</li>
+                        <li><span>No Experiene</span><br>Fresher</li>
+                        <li><span>No Experience</span><br>Fresher </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of engineering</span><br>Pursing in 2024<br> Last Semester SGPA: 9.59</li>
+                        <li><span>Diploma</span><br>Completed in 2024<br>Final Percentage: 90.51%</li>
+                        <li><span>SSC</span><br>Completed in 2021<br>Percentage: 97.20%</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <img src="images/pro1.jpg" class="img">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur quae repellat, debitis tenetur ad facilis consectetur maiores voluptatum? Dignissimos similique quibusdam eum quia ullam minima adipisci id sunt consectetur.</p>
+                    <a href="#">View more</a>
+                </div>
+                <div>
+                    <img src="images/pro2.jpg" class="img">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur quae repellat, debitis tenetur ad facilis consectetur maiores voluptatum? Dignissimos similique quibusdam eum quia ullam minima adipisci id sunt consectetur.</p>
+                    <a href="#">View more</a>
+                </div>
+                <div>
+                    <img src="images/proj3.jpeg" class="img">
+                    <h2>Project 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequuntur quae repellat, debitis tenetur ad facilis consectetur maiores voluptatum? Dignissimos similique quibusdam eum quia ullam minima adipisci id sunt consectetur.</p>
+                    <a href="#">View more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cer">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="cer-list">
+                <div class="cert">
+                    <img src="images/cer1.JPG" alt="no">
+                </div>
+                <div class="cert">
+                    <img src="images/cer3.JPG" alt="no">
+                </div>
+                <div class="cert">
+                    <img src="images/cer4.JPG" alt="no">
+                </div>
+
+            </div>
+
+         <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+ <!--   --------contact-------------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="cont-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-message"></i> pratikshinde@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9699959930</p>
+                <div class="social-icon">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Pratik_Shinde.pdf" download class="btn cv">Download CV</a>
+            </div>
+            <div class="cont-right">
+                <form action="#">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn cv">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p>Copyright © Pratik. <i class="fa-solid fa-heart"></i></p>
+    </div>
+   </div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
